@@ -1,0 +1,66 @@
+
+@font-face {
+font-family: 'Hani';
+src: url(/Hani/Hani.woff2) format("woff2");
+}
+
+* {
+    font-family: 'Hani', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    
+    line-height: 5rem;
+    color: white;
+   
+}
+
+h2{
+    font-size: 3rem;
+   
+    line-height: 3rem;
+    color: white;
+   
+}
+
+
+
+
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.project {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    min-height: 10vh;
+}
+
+
+.content {
+    width: 35vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+    color: black;
+   margin-bottom: 5vh;
+
+}
+
