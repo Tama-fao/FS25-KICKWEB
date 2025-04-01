@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid
+    </title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(61, 61, 61);
+        padding: 1rem;
+
+    }
+
+    .parent-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 45vw;
+
+
+    }
+
+    .child {
+        background-color: rgb(56, 56, 233);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 30px;
+        color: white;
+        padding: 1rem;
+    }
+</style>
+
+<body>
+    <div class="parent-container">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

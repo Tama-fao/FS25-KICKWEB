@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #453d3d;
+    margin-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-family: 'Oswald';
+
+    font-size: 60px;
+}
+
+
+.oswald-wup {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
+body {
+    background-color: seagreen;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+#testtext {
+    color: rgb(255, 193, 136);
+}
+
+.sometext {
+    color: rgb(213, 181, 244);
+    font-size: 24px;
+}
+
+div {
+    border: 2px dashed white;
+    padding-bottom: 100px;
+}
+
+@font-face {
+    font-family:'Grotesk-02Mince' ;
+    src: url(/Users/tamarafaoro/Documents/KickWeb/Tag1/grotesk-master/fonts/_web/Grotesk-02Mince.woff2) format("woff2");
+}
+
+
+h2 {
+    text-align: center;
+    color: palegoldenrod;
+    font-family:'Grotesk-02Mince'  ;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid
+    </title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(61, 61, 61);
+        padding: 1rem;
+
+    }
+
+    .parent-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 1fr 1fr 1fr;
+       
+        height: 50vh;
+
+
+    }
+
+    .child-1 {
+        background-color: rgba(56, 56, 233, 0.5);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 30px;
+        color: white;
+        padding: 1rem;
+        grid-area: 2/1/5/4;
+        z-index: 2;
+       
+    }
+
+    .child-2 {
+        background-color: rgba(233, 56, 74, 0.5);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 30px;
+        color: white;
+        padding: 1rem;
+        grid-area: 1/2/3/5;
+      
+       
+    }
+
+    .child-3 {
+        background-color: rgba(56, 233, 74, 0.5);
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 30px;
+        color: white;
+        padding: 1rem;
+        grid-area: 4/1/4/5;
+        z-index: 1;
+        
+    }
+</style>
+</style>
+
+<body>
+    <div class="parent-container">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+ 
+    </div>
+
+</body>
+
+</html>
