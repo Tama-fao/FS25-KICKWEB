@@ -28,6 +28,9 @@ article {
     font-size: 100px;
 }
 
+
+/* Grid -------------------------------------------------------*/
+
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -92,7 +95,7 @@ article {
 }
 
 
-
+/* Animations -------------------------------------------------------*/
 
 @keyframes rect-slide {
     0% {
@@ -241,7 +244,7 @@ article {
     }
 }
 
-
+/* Outer Elements -------------------------------------------------------*/
 
 .rect-thick {
     background-color: white;
@@ -380,6 +383,8 @@ h1 {
     animation: appearFont2 2.5s forwards;
 }
 
+/* Grid inner elements -------------------------------------------------------*/
+
 
 .div-innerO {
     grid-area: 1 / 1 / 3 / 2;
@@ -405,6 +410,8 @@ h1 {
     grid-area: 6 / 4 / 7 / 4;
 }
 
+
+/* inner Elements -------------------------------------------------------*/
 
 .innerO {
     border-radius: 50%;
@@ -475,6 +482,7 @@ h1 {
     margin-top: 11vh;
 }
 
+/* Tablet size -------------------------------------------------------*/
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
     .parent {
@@ -484,6 +492,7 @@ h1 {
 
     }
 
+    /* Tablet Grid -------------------------------------------------------*/
 
     .divO {
         grid-area: 1 / 1 / 2 / 2;
@@ -539,7 +548,7 @@ h1 {
 
 
 
-
+    /* Tablet inner Grid -------------------------------------------------------*/
 
 
 
@@ -566,6 +575,9 @@ h1 {
     .div-innerRect2 {
         grid-area: 6 / 3 / 7 / 4;
     }
+
+
+    /* all tablet elements & animations -------------------------------------------------------*/
 
 
     @keyframes appearFont {
@@ -781,6 +793,9 @@ h1 {
 
 }
 
+
+/* Mobile Size -------------------------------------------------------*/
+
 @media screen and (max-width: 640px) {
 
     .parent {
@@ -791,7 +806,7 @@ h1 {
     }
 
 
-
+    /* Mobile Grid -------------------------------------------------------*/
 
 
     .divO {
@@ -849,7 +864,7 @@ h1 {
 
 
 
-
+    /* Mobile inner Grid -------------------------------------------------------*/
 
 
     .div-innerO {
@@ -877,7 +892,7 @@ h1 {
     }
 
 
-
+    /* all mobile elements & animations -------------------------------------------------------*/
 
     @keyframes bigO {
         0% {
@@ -1080,7 +1095,3 @@ h1 {
     }
 
 }
-
-
-
-/*hallo*/
