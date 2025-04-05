@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inspo</title>
 </head>
+
+<style>
+    @font-face {
+        font-family: 'Hani';
+        src: url(/Hani/Hani.woff2) format("woff2");
+    }
+
+    p {
+        font-family: 'Hani', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-family: 'Hani', sans-serif;
+        font-size: 2rem;
+    }
+
+    button {
+        color: black;
+        background-color: white;
+        border-radius: 0;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        padding: 10px;
+
+    }
+
+    button:hover {
+        color: black;
+        background-color: rgb(208, 214, 249);
+        border-radius: 0;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2vw;
+    }
+
+    img {
+        width: 30vw;
+    }
+
+    .text-title {
+        padding-right: 10vw;
+    }
+</style>
+
 <body>
-    <img src="School-of-Architecture.jpeg" alt="">
-    <img src="_ (5).jpeg" alt="">
-    <p>By Robin Planas <br>For the School of Architecture, University of Puerto Rico</p>
+    <div class="text-title">
+        <h1>Inspiration</h1>
+        <p>By Robin Planas <br>For the School of Architecture, University of Puerto Rico</p>
+        <button onclick="history.back()"> Zurück</button>
+    </div>
+
+    <div class="image2">
+        <img src="_ (5).jpeg" alt="">
+    </div>
+
+    <div class="image1">
+        <img src="School-of-Architecture.jpeg" alt="">
+    </div>
+
+
+
+
 </body>
+
 </html>

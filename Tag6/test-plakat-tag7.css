@@ -13,7 +13,14 @@ h1 {
 body {
     animation: TheBackground 1s forwards 5s;
     background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
 }
+
+
+
 
 article {
     height: 100vh;
@@ -35,6 +42,7 @@ article {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     height: 200vh;
+    cursor: pointer;
 }
 
 
@@ -1085,4 +1093,87 @@ h1 {
 
 
 
-/*hallo*/
+  
+ 
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+
+  #overlay.active {
+    pointer-events: auto;
+  }
+  
+  #overlay::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 1);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  #overlay.active::before {
+    transform: translate(-50%, -50%) scale(30);
+    pointer-events: auto;
+  }
+  
+  .overlay-content {
+    position: relative;
+    text-align: left;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90vw;
+  }
+  
+  #overlay.active .overlay-content {
+    opacity: 1;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+    line-height: 1em;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  }
+
+  p {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+  }
+
+  @media screen and (min-width: 1280px) {
+  .text-content {
+    margin-right: 10vw;
+  }
+}

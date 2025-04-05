@@ -42,3 +42,18 @@ function getBackgroundColor() {
 document.documentElement.style.setProperty('--bg-color', getBackgroundColor());
 
 
+// Open and close Overlay
+
+const trigger = document.getElementById("trigger");
+const overlay = document.getElementById("overlay");
+const closeBtn = document.getElementById("closeOverlay");
+
+trigger.addEventListener("click", () => {
+    overlay.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+});
+
+
